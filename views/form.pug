@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .msgSet
+    h1= title
+    form(action='/new' method='POST' class='newForm')
+      input(type='text' name='author' placeholder= 'Author Name' autocomplete='off' class='newMsg' required )
+      input(type='text' name='descrip' placeholder= 'Put some text' autocomplete='off' class='newMsg' required)
+      button(type='submit' class='submitBtn')  Add

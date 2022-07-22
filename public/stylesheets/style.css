@@ -1,8 +1,71 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #00B7FF;
+.mainTitle {
+  background-color: rgb(15, 121, 103);
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  height: 3.5rem;
+  line-height: 3.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.addMsg {
+  color: #000000;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-top: 1rem
+}
+
+.msgBlock {
+  background-color: rgb(33, 72, 105);
+  color: white;
+  box-shadow: 5px 8px rgb(97, 163, 221);
+  padding: 6px;
+  font-size: 1.5rem
+}
+
+.msgSet{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newForm {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  gap: 12px;
+  padding: 24px;
+  background-color: black;
+}
+
+.newMsg {
+  height: 30px;
+  font-weight: bold;
+}
+
+.submitBtn {
+  background-color: rgb(53, 44, 192);
+  color: white;
+  height: 25px;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: content-box;
+}
+
+.msgBlock:hover {
+  transform: scale(1.1);
 }
